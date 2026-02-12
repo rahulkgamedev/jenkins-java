@@ -8,13 +8,6 @@ pipeline {
 
     stages {
 
-       stage('Checkout') {
-    steps {
-        git 'https://github.com/rahulkgamedev/jenkins-java.git'
-    }
-}
-
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
@@ -43,4 +36,3 @@ pipeline {
         }
     }
 }
-
