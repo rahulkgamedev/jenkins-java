@@ -8,11 +8,12 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/YOUR_USERNAME/java-jenkins-demo.git'
-            }
-        }
+       stage('Checkout') {
+    steps {
+        git 'https://github.com/rahulkgamedev/jenkins-java.git'
+    }
+}
+
 
         stage('Build') {
             steps {
